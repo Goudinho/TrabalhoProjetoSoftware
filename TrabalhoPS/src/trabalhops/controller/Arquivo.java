@@ -25,7 +25,7 @@ import java.time.LocalDate;
 public class Arquivo {
 
     private static final String nomeArquivo = "Arquivo.bin";
-
+    private static final String FILE_PATH = "/home/victor";
     public Arquivo() {
     }
 
@@ -46,7 +46,7 @@ public class Arquivo {
 
         String filename = "Arquivo.bin";
         String workingDirectory = System.getProperty("user.dir");
-        String absoluteFilePath = "";
+        String absoluteFilePath = "FILE_PATH";
 
         absoluteFilePath = workingDirectory + File.separator + filename;
         System.out.println("Final filepath : " + absoluteFilePath);
